@@ -1,4 +1,3 @@
-#ifndef MAIN_H
 #define MAIN_H
 
 int _putchar(char);
@@ -11,6 +10,6 @@ int _abs(int);
 int print_last_digit(int);
 void jack_bauer(void);
 void times_table(void);
-int add(inty a, int b);
+int add(int a, int b);
 void print_to_98(int n);
 
