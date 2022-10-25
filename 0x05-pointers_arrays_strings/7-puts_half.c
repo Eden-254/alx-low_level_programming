@@ -1,5 +1,4 @@
 #include "main.h"
-#include "2-strlen.c"
 /**
  * puts_half - Prints half of a string
  * @str: The string to print
@@ -8,16 +7,28 @@
  */
 void puts_half(char *str)
 {
-	int i;
-	int oE;
+	int j = 0;
+	int k;
 
-	if (_strlen(str) % 2 != 0)
+	while (str[j] != '\0')
 	{
-		oE += 1;
+		j++;
 	}
-	for (i = (_strlen(str) + oE) / 2; i < _strlen(str); i++)
+
+	if (j % 2 == 1)
 	{
-		_putchar(str[i]);
+		k = (j - 1) / 2;
+		k += 1;
 	}
+	else
+	{
+		k = j / 2;
+	}
+
+	for (; k < j; k++)
+	{
+		_putchar(str[k]);
+	}
+
 	_putchar('\n');
 }
