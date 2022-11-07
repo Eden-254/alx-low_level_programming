@@ -1,3 +1,8 @@
 #include "main.h"
+#include <stdio.h>
 
-char *_strcpy(char *dest, char *src);
+char *_memcpy(char *dest, char *src, unsigned int n);
+
+void function(void)
+{
+}
