@@ -1,0 +1,6 @@
+!<arch>
+0-isupper.o/    0           0     0     644     21        `
+int _isupper(int c);
+
+100-atoi.o/     0           0     0     644     20        `
+int _atoi(char *s);
