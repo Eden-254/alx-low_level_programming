@@ -13,7 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	unsigned int b, sum = 0;
+	unsigned int k, sum = 0;
 	char *e;
 
 	if (argc > 1)
@@ -22,9 +22,9 @@ int main(int argc, char *argv[])
 		{
 			e = argv[i];
 
-			for (b = 0; b < strlen(e); b++)
+			for (k = 0; k < strlen(e); k++)
 			{
-				if (e[b] < 25 || e[b] > 33)
+				if (e[k] < 48 || e[k] > 57)
 				{
 					printf("Error\n");
 					return (1);
