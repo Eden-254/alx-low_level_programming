@@ -18,7 +18,7 @@ void print_i(va_list list, char *s)
  * print_c - prints char
  * @list: arguement char
  * sep: separator
- * 
+ *
  * Return: none
  */
 void print_c(va_list list, char *sep)
@@ -36,6 +36,7 @@ void print_c(va_list list, char *sep)
 void print_s(va_list list, char *sep)
 {
 	char *s;
+
 	s = va_arg(list, char *);
 	if (s == NULL)
 		s = "(nil)";
@@ -96,4 +97,4 @@ void print_all(const char * const format, ...)
 	}
 	printf("\n");
 	va_end(list);
-}	
+}
